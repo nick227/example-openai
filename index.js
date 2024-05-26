@@ -44,6 +44,6 @@ const systemPrompt = 'Translate the user prompt into pirate language';
 const messages = [
     { role: "system", content: systemPrompt },
     { role: "user", content: userPrompt }
-]
+];
 
 run(messages);
