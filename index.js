@@ -29,7 +29,7 @@ function saveOpenAiResults(content) {
 }
 
 // Main function
-async function run() {
+async function run(messages) {
     try {
         const completion = await requestOpenAi(messages);
         const filePath = saveOpenAiResults(completion);
@@ -46,4 +46,4 @@ const messages = [
     { role: "user", content: userPrompt }
 ]
 
-run();
+run(messages);
